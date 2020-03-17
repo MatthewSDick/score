@@ -8,12 +8,37 @@
     <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <h1>My Score Board</h1>
+    <h1>Washington Capitals Scoreboard</h1>
+
+
+    <ul class="flex-container">
+      <li class="flex-item">Team</li>
+      <li class="flex-item">P-1</li>
+      <li class="flex-item">P-2</li>
+      <li class="flex-item">P-3</li>
+      <li class="flex-item">Final</li>
+    </ul>
+    <ul class="flex-home">
+      <li class="flex-item">Caps</li>
+      <li class="flex-item home1">0</li>
+      <li class="flex-item home2">0</li>
+      <li class="flex-item home3">0</li>
+      <li class="flex-item homef">0</li>
+    </ul>
+    <ul class="flex-away">
+      <li class="flex-item">Penguins</li>
+      <li class="flex-item visit1">0</li>
+      <li class="flex-item visit2">0</li>
+      <li class="flex-item visit3">0</li>
+      <li class="flex-item visitf">0</li>
+    </ul>
+
+    </div>
     <section class="teams">
       <section class="team one">
         <section>
-          <h2 class="team-1-name">Team 1</h2>
-          <p class="team-1-score">10</p>
+          <h2 class="team-1-name">Capitals</h2>
+          <p class="team-1-score">0</p>
         </section>
         <section>
           <section>
@@ -30,8 +55,8 @@
       </section>
       <section class="team two">
         <section>
-          <h2 class="team-2-name">Team 2</h2>
-          <p class="team-2-score">10</p>
+          <h2 class="team-2-name">Penguins Suck</h2>
+          <p class="team-2-score">0</p>
         </section>
         <section>
           <section>
@@ -47,6 +72,23 @@
         </section>
       </section>
     </section>
+    
+    <h3>Select the current period</h3>
+    <ul class="period">
+      <li class="period-select period1">
+        <input type="radio" id="1" name="period" value="1" checked="checked" >
+        <label>1</label><br>
+      </li>
+      <li class="period-select period2">
+        <input type="radio" id="2" name="period" value="2">
+        <label>2</label><br>
+      </li>
+      <li class="period-select period3">
+        <input type="radio" id="3" name="period" value="3">
+        <label>3</label><br>    
+      </li>
+    </ul>
+    <button class="end-period">End the period</button>
     <button class="reset">Reset the game</button>
     <script src="/main.js" charset="utf-8"></script>
   </body>

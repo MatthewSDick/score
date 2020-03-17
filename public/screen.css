@@ -12,16 +12,106 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: #c8152e;
   color: rgb(14, 14, 14);
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
 h1 {
   text-align: center;
+  background-color: #041e42;
+  padding: 1rem 20rem 1rem 20rem;
+  color: white;
+  margin-top: 0rem;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-home {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-away {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: black;
+  width: 200px;
+  height: 30px;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  align-items: center;
+  border: white;
+  border-width: 2px;
+  border-style: solid;
+  padding-top: 1rem;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
 }
 
 .teams {
@@ -43,7 +133,36 @@ h1 {
   font-size: 2rem;
 }
 
-.team-1-score, .team-2-score {
+.team-1-score,
+.team-2-score {
   text-align: center;
   font-size: 5rem;
+}
+
+.reset {
+  margin-bottom: 3rem;
+  height: 3rem;
+  width: auto;
+  font-size: 1rem;
+}
+
+.period {
+  display: flex;
+  list-style: none;
+  flex-flow: row wrap;
+
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  margin: 0;
+  list-style: none;
+}
+
+.period-select {
+  padding-right: 1rem;
+}
+
+.end-period {
+  margin-bottom: 1rem;
 }
